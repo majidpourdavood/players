@@ -1,0 +1,480 @@
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/iransans/IRANSansWeb.eot');
+    src: url(./fonts/iransans/IRANSansWeb.eot?#iefix) format("embedded-opentype"),
+    url('./fonts/iransans/IRANSansWeb.woff2') format("woff2"),
+    url('./fonts/iransans/IRANSansWeb.woff') format("woff"),
+    url('./fonts/iransans/IRANSansWeb.ttf') format("truetype")
+}
+
+html,
+body {
+    font-family: IRANSans, Helvetica, Arial, sans-serif !important;
+    direction: rtl;
+    text-align: right;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    margin: 0;
+    background: #fff;
+    color: #444444;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.header {
+    background-color: mediumvioletred;
+    min-height: 5.5rem;
+}
+
+.header .logo {
+    width: 4.75rem;
+}
+
+.header .navbar-light .navbar-nav .nav-link {
+    color: rgb(255 255 255);
+}
+
+.header .navbar-nav > li {
+    float: right;
+    padding: 0 0.6rem;
+}
+
+.header .btn-search {
+    background-color: #000000;
+    color: #ff00a0;
+    font-weight: bold;
+}
+
+
+.subheader-inner-page {
+    background-color: #383838;
+    background-image: url(/img/bgs/title-background/CYAN.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 8px 6px -2px rgb(0 0 0 / 20%);
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.subheader-inner-page {
+    background: none;
+    overflow: hidden;
+    position: relative;
+}
+
+.subheader-inner-page .shape-continue-mobile {
+    background: #444;
+    border-radius: 100em 0 0 0;
+    display: none;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.subheader-inner-page .shape-continue-desktop {
+    background: #444;
+    border-radius: 100em 0 0 0;
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+}
+
+.subheader-inner-page .select-items {
+    float: right;
+    margin-left: 30px;
+    position: relative;
+}
+
+
+.subheader-inner-page .select-items .ent-holder {
+    cursor: pointer;
+    display: flex;
+    float: right;
+    width: 100%;
+}
+
+.subheader-inner-page .select-items.not-selectable .ent-holder {
+    cursor: default;
+}
+
+.subheader-inner-page .select-items .ent-holder .logo-holder {
+    background: #fff;
+    border-radius: 100%;
+    float: right;
+    height: 45px;
+    line-height: 35px;
+    margin-left: 5px;
+    overflow: hidden;
+    padding: 4px;
+    text-align: center;
+    width: 45px;
+}
+
+.subheader-inner-page .select-items .ent-holder .logo-holder img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+.subheader-inner-page .select-items .ent-holder h1, .subheader-inner-page .select-items .ent-holder h2 {
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+    margin: 0;
+}
+
+.subheader-inner-page .subhead-menu {
+    float: right;
+    height: 30px;
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.subheader-inner-page .subhead-menu ul {
+    display: flex;
+    float: right;
+    list-style: none;
+    margin: 0;
+    overflow-x: scroll;
+    padding: 0;
+    width: 100%;
+}
+
+.subheader-inner-page .subhead-menu ul li {
+    display: block;
+    flex: none;
+    float: right;
+    margin-left: 18px;
+}
+
+.subheader-inner-page .subhead-menu ul li a, .subheader-inner-page .subhead-menu ul li span {
+    border-bottom: 3px solid transparent;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    opacity: .8;
+    padding: 0 0 7px;
+}
+
+.subheader-inner-page.dark-text .ent-holder h1, .subheader-inner-page.dark-text .ent-holder h1 a, .subheader-inner-page.dark-text .subhead-menu ul li a, .subheader-inner-page.dark-text .subhead-menu ul li span {
+    color: #000 !important;
+}
+
+@media (min-width: 1200px) {
+    .subheader-inner-page .team-back-image {
+        background-position: 0;
+        background-size: cover;
+        width: 65%;
+    }
+}
+
+.subheader-inner-page .team-back-image {
+    background-color: #555;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+.subheader-inner-page .subhead-menu .indicator {
+    border-bottom: 2px solid #fff;
+    bottom: 0;
+    display: none;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    z-index: 0;
+}
+
+.subheader-inner-page.dark-text .subhead-menu .indicator {
+    border-bottom: 2px solid #000;
+}
+
+
+.squad-player, .squad-player:after {
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.squad-player {
+    box-shadow: 0 0 25px 0 hsl(0deg 0% 74% / 50%);
+    color: #212121;
+    display: flex;
+    flex-direction: row;
+    height: 64px;
+    margin: 0 5px 15px;
+    padding: 8px 5px;
+    position: relative;
+    text-align: center;
+    transform: skew(-5deg, 0);
+}
+
+.squad-player .country-flag {
+    height: 25px;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 40px;
+}
+
+.squad-player figure {
+    background-color: #cfcecf;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    height: 40px;
+    margin-right: 20px;
+    position: relative;
+    transform: skew(5deg, 0);
+    width: 40px;
+    z-index: 1;
+}
+
+.squad-player figure img {
+    border-radius: 50%;
+    height: 40px !important;
+    max-width: unset !important;
+    object-fit: contain;
+    width: 40px !important;
+}
+
+.squad-player .player-info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    justify-content: center;
+    margin-right: 10px;
+    transform: skew(5deg, 0);
+}
+
+.squad-player .player-info strong {
+    color: #212121;
+}
+
+.squad-player .player-info span {
+    color: #9e9e9e;
+}
+
+.squad-player .shirt-number {
+    align-items: center;
+    background-image: url(../images/Shirt-desktop.svg);
+    background-position: right 4px;
+    background-repeat: no-repeat;
+    color: #362d2d;
+    color: #e0e0e0;
+    display: flex;
+    font-family: Helvetica;
+    font-size: 38px;
+    font-weight: 700;
+    height: 100%;
+    justify-content: center;
+    left: -5px;
+    letter-spacing: -3px;
+    padding: 10px 0.6em 0 0;
+    position: absolute;
+    top: 0;
+    transform: skew(5deg, 0);
+    width: 63px;
+    z-index: 2;
+}
+
+.squad-player:after {
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: -6px;
+    position: absolute;
+    top: 0;
+    transform: skew(5deg, 0);
+    width: 25px;
+    z-index: 1;
+}
+
+footer {
+    font-size: 13px !important;
+    line-height: 20px !important;
+    margin-top: 30px;
+}
+
+.mainbody, footer {
+    direction: rtl;
+    float: right;
+    text-align: right;
+    width: 100%;
+}
+
+footer .allfooter {
+    background-color: #19242e;
+    background-image: url(../img/shared/footer/footerbg.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+
+footer .allfooter, footer .allfooter .allfooter-menus {
+    float: right;
+    width: 100%;
+}
+
+footer .allfooter .allfooter-menus .footermenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .allfooter .allfooter-menus .footermenu li {
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+footer .allfooter .allfooter-menus .footermenu li span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+footer .allfooter .allfooter-menus .footermenu li span img {
+    margin-left: 6px;
+}
+
+footer .allfooter .allfooter-menus .footermenu li a {
+    color: #999;
+}
+
+footer .allfooter .allfooter-copy {
+    border-top: 1px solid hsla(0, 0%, 100%, .2);
+    float: right;
+    margin-top: 30px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+footer .allfooter .allfooter-copy .footerlogo {
+    color: #fff;
+    height: 20px !important;
+    line-height: 25px;
+    margin-left: 15px;
+}
+
+footer .allfooter .allfooter-copy .footerlogo .footer-logo-holder {
+    float: right;
+    margin-left: 5px;
+    position: relative;
+    top: 3px;
+    width: 20px;
+}
+
+
+footer .allfooter .allfooter-copy > div {
+    float: right;
+}
+
+footer .allfooter .allfooter-copy .copyright {
+    color: #999;
+    font-size: 12px;
+    padding-top: 3px;
+}
+
+footer .allfooter .allfooter-copy .socials {
+    float: left;
+}
+
+footer .allfooter .allfooter-copy .socials a {
+    color: #999;
+    float: left;
+    font-size: 20px;
+    margin-right: 15px;
+    position: relative;
+    width: 15px;
+}
+
+header .allhead .allhead-auth {
+    float: left;
+    height: 20px;
+}
+header .allhead .allhead-auth .allhead-date {
+    border-left: 1px solid #666;
+    margin-left: 5px;
+    padding-left: 10px;
+}header .allhead .allhead-auth .allhead-date {
+     border-left: 1px solid hsla(0,0%,100%,.3);
+ }header .allhead .today-time img {
+      max-width: 16px;
+  }
+.search-btn {
+    background: transparent;
+    border: none;
+    /*border-left: 1px solid hsla(0,0%,100%,.3);*/
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 0 0 0 10px;
+    position: relative;
+    top: 0;
+}
+
+header .allhead .allhead-auth .allhead-date {
+    color: #fff;
+}
+
+.intro-list {
+    float: right;
+    height: 45px;
+    margin-bottom: 15px;
+    width: 100%;
+}.intro-list h1, .intro-list h2 {
+     float: right;
+     font-size: 22px;
+     font-weight: 600;
+     height: 45px;
+     line-height: 45px;
+     margin-bottom: 0;
+ }.intro-list h1 .title-text, .intro-list h2 .title-text {
+      float: right;
+  }
+
+.navbar-light .navbar-toggler {
+    color: #fff;
+    border: unset;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+
+footer .allfooter .allfooter-copy .socials {
+    margin-right: auto;
+    margin-top: 1rem;
+    float: inherit;
+}
+}
+
+.table td, .table th {
+    padding: 0;
+    vertical-align: top;
+    border-top: 0;
+    width: 21rem !important;
+}
